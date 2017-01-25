@@ -1,0 +1,93 @@
+/********** Base styles **********/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-size: 16px;
+  font-family: Georgia, serif;
+}
+h1 {
+  margin: 15px 0;
+  text-align: center;
+  font-size: 175%;
+}
+
+section{
+  padding: 0 10px 10px 10px;
+  background-color: silver;
+  margin: 2% 0 0% 2%;
+
+}
+
+p{
+    box-sizing: content-box;
+    text-align: center;
+    font-weight: bold;
+    position: relative;
+    left: 75%;
+    border-style: solid;
+    border-width: 1px;
+    padding: 5px;
+    width: 25%;
+    margin: 0;
+    font-size: 125%;
+}
+.p1{
+  background-color: yellow;
+}
+.p2{
+  background-color: blue;
+  color:  white;
+  border-color: black;
+}
+.p3{
+  background-color: pink;
+}
+/* Simple Responsive Framework. */
+.row {
+  width: 100%;
+}
+
+/********** Destok View only **********/
+@media (min-width: 992px) {
+  .col-dv-4,.col-dv-12 {
+    float: left;
+    border: 1px solid black;
+  }
+  
+  .col-dv-4 {
+    width: 30.66%;
+  }
+  
+  .col-dv-12 {
+    width: 100%;
+  }
+}
+
+/********** Tablet View only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-tv-6, .col-tv-12 {
+    float: left;
+    border: 1px solid black;
+  }
+  
+  .col-tv-6 {
+    width: 47%;
+  }
+  
+  .col-tv-12 {
+    width: 97%;
+  }
+}
+
+/********** Mobile View only **********/
+@media (max-width: 767px) {
+  .col-mv-12 {
+    float: left;
+    border: 1px solid black;
+     width: 97%;
+  }
+}
+
